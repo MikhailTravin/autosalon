@@ -656,6 +656,10 @@ h6 {
   top: -6px;
 }
 
+.product-card-range-sum .noUi-value.noUi-value-horizontal.noUi-value-large {
+  margin: 0px 0px 0px 5px;
+}
+
 .noUi-vertical {
   width: 18px;
 }
