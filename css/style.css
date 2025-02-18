@@ -1198,6 +1198,7 @@ h2 span {
   -webkit-clip-path: polygon(0 0, 100% 0%, 77% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 77% 100%, 0% 100%);
   z-index: 2;
+  background: transparent;
 }
 
 .shadow-1 {
