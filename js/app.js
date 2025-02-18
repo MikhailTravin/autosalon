@@ -12435,6 +12435,7 @@
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 20,
+            preloadImage: false,
             speed: 800,
             lazy: true,
             loop: true,
@@ -15554,6 +15555,7 @@ PERFORMANCE OF THIS SOFTWARE.
         if (colorItems) colorItems.forEach((colorItem => {
             colorItem.addEventListener("click", (function(e) {
                 const image = document.querySelector(".picture img");
+                const source = document.querySelector(".picture source");
                 const nameColor = document.querySelector(".top-product-card__name-color span");
                 if (null != e.target.classList.contains("_active")) {
                     let colorTitle = e.target.querySelector(".top-product-card__name");
@@ -15564,6 +15566,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 }));
                 colorItem.classList.add("_active");
                 image.src = colorItem.getAttribute("src");
+                if (source) source.srcset = colorItem.getAttribute("src");
             }));
         }));
         let packagesPrices = document.querySelectorAll(".left-packages-prices__column");
