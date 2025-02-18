@@ -7791,6 +7791,13 @@
                 document.documentElement.classList.add(className);
             }));
         }
+        function addLoadedClass() {
+            window.addEventListener("load", (function() {
+                setTimeout((function() {
+                    document.documentElement.classList.add("loaded");
+                }), 0);
+            }));
+        }
         let _slideUp = (target, duration = 500, showmore = 0) => {
             if (!target.classList.contains("_slide")) {
                 target.classList.add("_slide");
@@ -15561,9 +15568,9 @@ PERFORMANCE OF THIS SOFTWARE.
         }));
         let packagesPrices = document.querySelectorAll(".left-packages-prices__column");
         if (packagesPrices) packagesPrices.forEach((packagesPrice => {
-            let packagesPricesItems = packagesPrice.querySelectorAll(".left-packages-prices__item");
-            let packagesPricesButtonTitle = packagesPrice.querySelector(".left-packages-prices__button .left-packages-prices__title");
-            let packagesPricesButtonSubtitle = packagesPrice.querySelector(".left-packages-prices__button .left-packages-prices__subtitle");
+            let packagesPricesItems = document.querySelectorAll(".left-packages-prices__item");
+            let packagesPricesButtonTitle = document.querySelector(".left-packages-prices__button .left-packages-prices__title");
+            let packagesPricesButtonSubtitle = document.querySelector(".left-packages-prices__button .left-packages-prices__subtitle");
             const packagesPricesButtonMob = document.querySelector(".left-packages-prices__button-mob");
             let packagesPricesButtonMobTitle = document.querySelector(".left-packages-prices__button-mob .left-packages-prices__button .left-packages-prices__title");
             let packagesPricesButtonMobSubtitle = document.querySelector(".left-packages-prices__button-mob .left-packages-prices__button .left-packages-prices__subtitle");
@@ -15583,6 +15590,16 @@ PERFORMANCE OF THIS SOFTWARE.
                         e.classList.remove("_active");
                     }));
                     packagesPricesItem.classList.add("_active");
+                    const id = packagesPricesItem.dataset.id;
+                    const contentSelector = `div[data-id='${id}'].right-packages-prices__column`;
+                    const contentBlocks = document.querySelector(contentSelector);
+                    let contents = document.querySelectorAll(".right-packages-prices__column");
+                    contents.forEach((content => {
+                        contents.forEach((e => {
+                            e.classList.remove("_active");
+                        }));
+                        contentBlocks.classList.add("_active");
+                    }));
                 }));
                 const shadow = document.querySelector(".product-card-shadow");
                 const close = document.querySelector(".close");
@@ -15602,8 +15619,15 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }));
         }));
+        const brandsMore = document.querySelector(".brands__button");
+        if (brandsMore) brandsMore.addEventListener("click", (function(e) {
+            const brandsBody = document.querySelector(".brands__body");
+            brandsBody.classList.add("_active");
+            brandsMore.classList.add("_active");
+        }));
         window["FLS"] = false;
         isWebp();
+        addLoadedClass();
         menuInit();
         showMore();
         formFieldsInit({
