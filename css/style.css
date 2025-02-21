@@ -8919,6 +8919,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .right-comparision__compare-close {
+    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
