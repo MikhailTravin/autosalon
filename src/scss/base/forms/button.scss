@@ -1,0 +1,81 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 15px 25px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	background: $blue;
+	color: $white;
+	transition: all 0.3s ease 0s;
+	border: 2px solid $blue;
+	&:hover {
+		background: #2f3278;
+		border: 2px solid #2f3278;
+	}
+	@media (max-width: $tablet) {
+		font-size: 14px;
+		padding: 16px 31px;
+	}
+	@media (max-width: $mobile) {
+		font-size: 15px;
+		padding: 14px;
+	}
+}
+
+.button-transparent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 16px 70px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 120%;
+	background: $white;
+	color: #6a6a6a;
+	transition: all 0.3s ease 0s;
+	border: 2px solid #686868;
+	&:hover {
+		border: 2px solid $blue;
+		color: $blue;
+	}
+	@media (max-width: $tablet) {
+		font-size: 14px;
+	}
+	@media (max-width: $mobile) {
+		width: 100%;
+		padding: 16px;
+	}
+}
+
+.button-border {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 16px 70px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 120%;
+	background: $white;
+	color: $blue;
+	transition: all 0.3s ease 0s;
+	border: 2px solid $blue;
+	&:hover {
+		background: rgba(51, 57, 185, 0.3);
+		color: $mainColor;
+	}
+	@media (max-width: $tablet) {
+		font-size: 14px;
+	}
+	@media (max-width: $mobile) {
+		width: 100%;
+		padding: 16px;
+	}
+}

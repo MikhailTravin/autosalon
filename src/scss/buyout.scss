@@ -1,0 +1,87 @@
+//Преимущества выкупа
+.benefits-buyout {
+    padding: 100px 0px;
+    @media (max-width: $tablet) {
+        padding: 50px 0px;
+    }
+    // .benefits-buyout__container
+    &__container {
+    }
+    // .benefits-buyout__top
+    &__top {
+    }
+    // .benefits-buyout__content
+    &__content {
+    }
+    // .benefits-buyout__body
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+            margin: -15px 0px;
+        }
+    }
+    // .benefits-buyout__column
+    &__column {
+        flex: 0 1 25%;
+        padding: 10px;
+        @media (max-width: $tablet) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 auto;
+            padding: 15px 0px;
+        }
+    }
+    // .benefits-buyout__item
+    &__item {
+        height: 100%;
+        @media (max-width: $tablet) {
+            display: flex;
+        }
+    }
+    // .benefits-buyout__number
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 15px 0px;
+        flex: 0 0 24px;
+        width: 24px;
+        height: 24px;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        &::before {
+            font-size: 8px;
+            color: $blue;
+        }
+        @media (max-width:$tablet){
+            margin: 0px 10px 0px 0px;
+        }
+    }
+    // .benefits-buyout__desc
+    &__desc {
+    }
+    // .benefits-buyout__title
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        margin: 0px 0px 15px 0px;
+        @media (max-width: $tablet) {
+            font-size: 16px;
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    // .benefits-buyout__subtitle
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c9197;
+        @media (max-width: $tablet) {
+            font-size: 14px;
+        }
+    }
+}

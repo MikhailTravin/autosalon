@@ -1,0 +1,111 @@
+.contacts {
+    padding: 100px 0px;
+    @media (max-width: $tablet) {
+        padding: 50px 0px;
+    }
+    @media (max-width: $mobile) {
+        padding: 40px 0px;
+    }
+    // .contacts__container
+    &__container {
+    }
+    // .contacts__content
+    &__content {
+    }
+    // .contacts__body
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 0px 60px 0px;
+        margin: -17px -15px;
+        @media (max-width: $tablet) {
+            padding: 0px 0px 30px 0px;
+        }
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+        @media (max-width: 360px) {
+            margin: -17px -10px;
+        }
+    }
+    // .contacts__column
+    &__column {
+        flex: 0 1 auto;
+        padding: 17px 15px;
+        @media (max-width: $mobile) {
+            flex: 0 1 50%;
+            min-width: 142px;
+        }
+        @media (max-width: 360px) {
+            padding: 17px 10px;
+        }
+    }
+    // .contacts__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        ul {
+            margin: -3px 0px;
+            li {
+                padding: 3px 0px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                color: #767676;
+                @media (max-width: $tablet) {
+                    font-size: 12px;
+                }
+                &:hover {
+                    a {
+                        color: $blue;
+                    }
+                }
+                a {
+                    white-space: nowrap;
+                    transition: all 0.3s ease 0s;
+                }
+            }
+        }
+    }
+    // .contacts__title
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $blue;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $tablet) {
+            font-size: 14px;
+            margin: 0px 0px 10px 0px;
+        }
+        @media (max-width: $mobile) {
+            font-size: 12px;
+        }
+    }
+    // .contacts__map
+    &__map {
+    }
+}
+
+#map {
+    width: 100%;
+    height: 372px;
+    @media (max-width: $tablet) {
+        height: 300px;
+    }
+    @media (max-width: $mobile) {
+        height: 280px;
+    }
+}
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: $mainColor;
+}

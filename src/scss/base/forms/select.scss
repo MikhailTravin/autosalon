@@ -1,0 +1,140 @@
+.select {
+	position: relative;
+	// .select__menu
+	&__menu {
+		position: relative;
+		&._active {
+			.select__arrow {
+				transform: rotate(-180deg);
+			}
+			.select__body {
+				display: block;
+			}
+		}
+	}
+	// .select__label
+	&__label {
+		margin: 0px 0px 10px 0px;
+		font-weight: 400;
+		font-size: 16px;
+		@media (max-width: $tablet) {
+			font-size: 12px;
+			color: #3d3d3d;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 5px 0px;
+		}
+	}
+	// .select__btn
+	&__btn {
+		position: relative;
+		cursor: pointer;
+	}
+	// .select__btntext
+	&__btntext {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 1px solid #e4e4e4;
+		padding: 15px 20px;
+		@media (max-width: $tablet) {
+			padding: 12px 15px;
+		}
+		&.filled {
+			border: 1px solid $blue;
+			input {
+				color: $blue;
+			}
+			.select__arrow {
+				&::before {
+					color: $blue;
+				}
+			}
+		}
+		input {
+			white-space: nowrap;
+			pointer-events: none;
+			width: 100%;
+			font-weight: 400;
+			font-size: 16px;
+			overflow: auto;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			&::placeholder {
+				color: #a9a9a9;
+			}
+			@media (max-width: $tablet) {
+				font-size: 12px;
+			}
+		}
+	}
+	// .select__arrow
+	&__arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20px;
+		height: 20px;
+		margin: 0px 0px 0px 10px;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		&::before {
+			font-size: 15px;
+			transform: rotate(90deg);
+		}
+	}
+	// .select__body
+	&__body {
+		outline: none;
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		z-index: 15;
+		margin: 8px 0px 0px 0px;
+	}
+	// .select__options
+	&__options {
+		border: 1px solid #e4e4e4;
+		padding: 10px 20px;
+		max-height: 120px;
+		background: $white;
+		overflow: auto;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		@media (max-width: $tablet) {
+			padding: 10px 15px;
+		}
+	}
+	// .select__option
+	&__option {
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		display: block;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 137%;
+		margin: 0px 0px 10px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: $tablet) {
+			font-size: 12px;
+		}
+	}
+	// .select__option-text
+	&__option-text {
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: $blue;
+		}
+	}
+}

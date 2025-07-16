@@ -1,0 +1,95 @@
+//Щаги
+.steps {
+    padding: 100px 0px;
+    @media (max-width: $tablet) {
+        padding: 77px 0px 52px 0px;
+    }
+    @media (max-width: $mobile) {
+        padding: 50px 0px;
+    }
+    // .steps__container
+    &__container {
+    }
+    // .steps__top
+    &__top {
+    }
+    // .steps__content
+    &__content {
+    }
+    // .steps__body
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            margin: -15px 0px;
+        }
+    }
+    // .steps__column
+    &__column {
+        flex: 0 1 25%;
+        padding: 10px;
+        @media (max-width: $tablet) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: $mobile) {
+            flex: 1 1 auto;
+            padding: 15px 0px;
+        }
+    }
+    // .steps__item
+    &__item {
+        height: 100%;
+    }
+    // .steps__number
+    &__number {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 25px 0px;
+        &::after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background: $blue;
+        }
+        span {
+            flex: 0 0 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 9px 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid $blue;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+            color: $blue;
+            @media (max-width: $tablet) {
+                font-size: 16px;
+            }
+        }
+    }
+    // .steps__desc
+    &__desc {
+    }
+    // .steps__title
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        margin: 0px 0px 15px 0px;
+        @media (max-width: $tablet) {
+            font-size: 16px;
+        }
+    }
+    // .steps__subtitle
+    &__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        color: #8c9197;
+    }
+}

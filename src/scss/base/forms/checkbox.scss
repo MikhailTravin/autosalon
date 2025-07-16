@@ -1,0 +1,173 @@
+.checkbox {
+	position: relative;
+	// .checkbox__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:checked + .checkbox__label .checkbox__icon {
+			border: 1px solid $mainColor;
+		}
+		&:checked + .checkbox__label .checkbox__icon:before {
+			opacity: 1;
+			color: $mainColor;
+		}
+		&._form-error + .checkbox__label .checkbox__icon {
+			border: 1px solid #930612;
+		}
+	}
+	// .checkbox__label
+	&__label {
+		cursor: pointer;
+		display: flex;
+	}
+	// .checkbox__icon
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #838383;
+		width: 20px;
+		height: 20px;
+		flex: 0 0 20px;
+		margin: 0px 10px 0px 0px;
+		padding: 6px 5px;
+		transition: all 0.3s ease 0s;
+		&::before {
+			transition: all 0.3s ease 0s;
+			color: $mainColor;
+			font-size: 11px;
+			opacity: 0;
+		}
+		@media (max-width: $mobile) {
+			flex: 0 0 25px;
+			margin: 0px 5px 0px 0px;
+			border: 1px solid #686868;
+			width: 25px;
+			height: 25px;
+			&::before {
+				font-size: 14px;
+			}
+		}
+	}
+	// .checkbox__text
+	&__text {
+		font-weight: 400;
+		font-size: 16px;
+		color: #838383;
+		@media (max-width: $tablet) {
+			font-size: 14px;
+		}
+		@media (max-width: $mobile) {
+			font-size: 10px;
+			letter-spacing: 0.03em;
+			color: #686868;
+		}
+		a {
+			color: $blue;
+			transition: all 0.3s ease 0s;
+			border-bottom: 1px solid $blue;
+			&:hover {
+				border-bottom: 1px solid transparent;
+			}
+		}
+	}
+}
+
+//Сравнение модификаций
+.checkbox-comparision {
+	&._active {
+		.checkbox-comparision__label {
+			border: 1px solid $blue;
+			@media (max-width: $tablet) {
+				border: none;
+			}
+			@media (max-width: $mobile) {
+				border: 1px solid $blue;
+			}
+		}
+		.checkbox-comparision__label .checkbox-comparision__title {
+			color: $mainColor;
+		}
+		.checkbox-comparision__label .checkbox-comparision__icon {
+			border: 1px solid $mainColor;
+		}
+		.checkbox-comparision__label .checkbox-comparision__icon:before {
+			opacity: 1;
+		}
+	}
+	// .checkbox-comparision__label
+	&__label {
+		cursor: pointer;
+		display: flex;
+		border: 1px solid #838383;
+		padding: 20px;
+		transition: all 0.3s ease 0s;
+		@media (max-width: $tablet) {
+			padding: 5px 0px;
+			border: none;
+		}
+		@media (max-width: $mobile) {
+			border: 1px solid #838383;
+			padding: 20px 13px 20px 20px;
+		}
+	}
+	// .checkbox-comparision__icon
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #838383;
+		width: 20px;
+		height: 20px;
+		flex: 0 0 20px;
+		margin: 0px 20px 0px 0px;
+		padding: 6px 5px;
+		transition: all 0.3s ease 0s;
+		&::before {
+			transition: all 0.3s ease 0s;
+			color: $mainColor;
+			font-size: 11px;
+			opacity: 0;
+		}
+		@media (max-width: $tablet) {
+			margin: 0px 10px 0px 0px;
+		}
+	}
+	// .checkbox-comparision__titles
+	&__titles {
+		display: flex;
+		justify-content: space-between;
+		flex: 1 1 auto;
+	}
+	// .checkbox-comparision__title
+	&__title {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 120%;
+		color: #838383;
+		transition: all 0.3s ease 0s;
+		margin: 0px 10px 0px 0px;
+		@media (max-width: $tablet) {
+			font-size: 15px;
+		}
+		@media (max-width: $mobile) {
+			font-size: 16px;
+		}
+	}
+	// .checkbox-comparision__subtitle
+	&__subtitle {
+		font-weight: 400;
+		font-size: 14px;
+		text-align: right;
+		@media (max-width: $tablet) {
+			font-size: 12px;
+			color: #838383;
+		}
+		@media (max-width: $mobile) {
+			font-size: 14px;
+			color: $mainColor;
+		}
+	}
+}

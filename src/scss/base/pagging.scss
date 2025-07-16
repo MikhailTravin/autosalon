@@ -1,0 +1,124 @@
+.pagging {
+	width: 100%;
+	margin: 60px 0px 0px 0px;
+	display: none;
+	justify-content: start;
+	align-items: center;
+	@media (max-width: $tablet) {
+		display: flex;
+		margin: 30px 0px 0px 0px;
+	}
+	@media (max-width: $mobile) {
+		display: none;
+	}
+	// .pagging__arrow
+	&__arrow {
+	}
+	// .pagging__arrow-prev
+	&__arrow-prev {
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		width: 50px;
+		height: 50px;
+		flex: 0 0 50px;
+		margin: 0px 7px 0px 0px;
+		border: 1px solid #a9a9a9;
+		border-radius: 50%;
+		&::before {
+			font-size: 24px;
+			color: #838383;
+			transform: rotate(-180deg);
+			transition: all 0.3s ease 0s;
+		}
+		&:hover {
+			background: $blue;
+			border: 1px solid $blue;
+			&::before {
+				color: $white;
+			}
+		}
+		@media (max-width: $tablet) {
+			margin: 0px 10px 0px 0px;
+		}
+	}
+	// .pagging__number
+	&__number {
+		margin: 0px 7px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 18px;
+		height: 18px;
+		flex: 0 0 18px;
+		background-color: transparent;
+		transition: all 0.3s ease 0s;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 110%;
+		text-transform: uppercase;
+		color: #a9a9a9;
+		text-align: center;
+		&:hover {
+			color: $blue;
+		}
+		&._active-pagging {
+			pointer-events: none;
+			text-decoration: underline;
+			color: $mainColor;
+		}
+		@media (max-width: $tablet) {
+			margin: 0px 10px;
+			padding: 5px;
+			flex: 0 0 40px;
+			width: 40px;
+			height: 40px;
+		}
+	}
+	// .pagging__arrow-next
+	&__arrow-next {
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		width: 50px;
+		height: 50px;
+		flex: 0 0 50px;
+		margin: 0px 0px 0px 7px;
+		border: 1px solid #a9a9a9;
+		border-radius: 50%;
+		&::before {
+			font-size: 24px;
+			color: #838383;
+			transition: all 0.3s ease 0s;
+		}
+		&:hover {
+			background: $blue;
+			border: 1px solid $blue;
+			&::before {
+				color: $white;
+			}
+		}
+		@media (max-width: $tablet) {
+			margin: 0px 0px 0px 10px;
+		}
+	}
+}
+
+.pagging-glasses {
+	width: 18px;
+	flex: 0 0 18px;
+	padding: 0px 0px 0px 0px;
+	&:hover {
+		background: transparent;
+		color: $blue;
+	}
+	@media (max-width: $tablet) {
+		width: 40px;
+		flex: 0 0 40px;
+	}
+}
