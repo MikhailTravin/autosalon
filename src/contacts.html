@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Контакты"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header-white.htm',{})
+		<main class="page">
+			<div class="page__main-home main-home main-home-other">
+				<div class="main-home__content">
+					<div class="main-home__image">
+						<img src="../img/bg/banner-12.png" alt="" class="banner">
+						<div class="shadow">
+							<div class="shadow-1"></div>
+							<div class="shadow-2"></div>
+						</div>
+					</div>
+					<div class="main-home__body">
+						<div class="main-home__item">
+							<h1 class="main-home__title">
+								Контакты
+							</h1>
+							<div class="main-home__subtitle">
+								Всегда на связи и готовы ответить<br> на любые интересующие вопросы
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__content">
+						<div class="contacts__body">
+							<div class="contacts__column">
+								<div class="contacts__item">
+									<div class="contacts__title">Связаться с нами:</div>
+									<ul>
+										<li>
+											<a href="tel:79999999999">+7 999 999-99-99</a>
+										</li>
+										<li>
+											<a href="tel:78888888888">+ 7 (888) 888–88–88</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="contacts__column">
+								<div class="contacts__item">
+									<div class="contacts__title">Наш адрес:</div>
+									<ul>
+										<li>
+											г. Москва, Варшавское шоссе 4
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="contacts__column">
+								<div class="contacts__item">
+									<div class="contacts__title">Почта:</div>
+									<ul>
+										<li>
+											<a href="mailto:pochta@mail.ru">pochta@mail.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="contacts__column">
+								<div class="contacts__item">
+									<div class="contacts__title">время работы офиса:</div>
+									<ul>
+										<li>
+											Пн-Пт с 9:00 до 18:00
+										</li>
+										<li>
+											Сб-Вс с 10:00 до 17:00
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="map" class="contacts__map"></div>
+					</div>
+				</div>
+			</div>
+			<div class="page__forms forms forms-banner">
+				<div class="forms__bg">
+					<img loading="lazy" src="../img/bg/banner-11.png" alt="">
+				</div>
+				<div class="forms__container">
+					<div class="forms__content">
+						<div class="forms__titles">
+							<div class="forms__title">
+								комплект зимних шин в подарок!
+							</div>
+							<div class="forms__subtitle">
+								При покупке автомобиля в нашем автосалоне
+							</div>
+						</div>
+						<form action="#" class="forms__form form">
+							<div class="form__inputs">
+								<div class="form__input">
+									<input type="text" name="form[]" placeholder="Имя">
+								</div>
+								<div class="form__input">
+									<input data-required type="text" name="form[]" placeholder="+7 999 999-99-99"
+										class="telephone">
+								</div>
+								<div class="form__input">
+									<button type="submit" class="form__button button">Отправить заявку</button>
+								</div>
+							</div>
+							<div class="form__checkbox checkbox">
+								<input data-required id="c_1" checked class="checkbox__input" type="checkbox" value="1"
+									name="form[]">
+								<label for="c_1" class="checkbox__label">
+									<span class="checkbox__icon _icon-check"></span>
+									<span class="checkbox__text">Я согласен с политикой обработки <a
+											href="#">персональных данных</a></span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU&amp;_v=20240623012845"></script>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

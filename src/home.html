@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header-blue.htm',{})
+		<main class="page">
+			<div class="page__main-home main-home">
+				<div class="main-home__content">
+					<div class="main-home__slider swiper">
+						<div class="main-home__wrapper swiper-wrapper">
+							<div class="main-home__slide swiper-slide">
+								<div class="main-home__image">
+									<img src="../img/bg/banner-1.png" alt="" class="banner">
+									<div class="shadow">
+										<div class="shadow-1"></div>
+										<div class="shadow-2"></div>
+									</div>
+								</div>
+								<div class="main-home__body">
+									<div class="main-home__item">
+										<div class="main-home__text">
+											СКОРО В ПРОДАЖЕ
+										</div>
+										<div class="main-home__title">Новый Changan UNI-K</div>
+										<a href="#" class="main-home__button button">
+											Перейти в каталог
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-home__slide swiper-slide">
+								<div class="main-home__image">
+									<img loading="lazy" src="../img/bg/banner-2.png" alt="" class="banner">
+									<div class="shadow">
+										<div class="shadow-1"></div>
+										<div class="shadow-2"></div>
+									</div>
+								</div>
+								<div class="main-home__body">
+									<div class="main-home__item">
+										<div class="main-home__text">
+											В подарок
+										</div>
+										<div class="main-home__title">Зимние шины</div>
+										<a href="#" data-popup="#leave-request" class="main-home__button button">
+											Оставить заявку
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-home__slide swiper-slide">
+								<div class="main-home__image">
+									<img loading="lazy" src="../img/bg/banner-3.png" alt="" class="banner">
+									<div class="shadow">
+										<div class="shadow-1"></div>
+										<div class="shadow-2"></div>
+									</div>
+								</div>
+								<div class="main-home__body">
+									<div class="main-home__item">
+										<div class="main-home__text">
+											В подарок
+										</div>
+										<div class="main-home__title">Каско и осаго</div>
+										<a href="#" data-popup="#leave-request" class="main-home__button button">
+											Оставить заявку
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-home__slide swiper-slide">
+								<div class="main-home__image">
+									<img loading="lazy" src="../img/bg/banner-4.png" alt="" class="banner">
+									<div class="shadow">
+										<div class="shadow-1"></div>
+										<div class="shadow-2"></div>
+									</div>
+								</div>
+								<div class="main-home__body">
+									<div class="main-home__item">
+										<div class="main-home__text">
+											Скидка по Trade-In
+										</div>
+										<div class="main-home__title">до 300 000 ₽</div>
+										<a href="#" data-popup="#leave-request" class="main-home__button button">
+											Оставить заявку
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-home__slide swiper-slide">
+								<div class="main-home__image">
+									<img loading="lazy" src="../img/bg/banner-5.png" alt="" class="banner">
+									<div class="shadow">
+										<div class="shadow-1"></div>
+										<div class="shadow-2"></div>
+									</div>
+								</div>
+								<div class="main-home__body">
+									<div class="main-home__item">
+										<div class="main-home__text">
+											уже в продаже
+										</div>
+										<div class="main-home__title">НОВЫЕ КРОССОВЕРЫ</div>
+										<a href="#" class="main-home__button button">
+											Перейти в каталог
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-home__slide swiper-slide">
+								<div class="main-home__image">
+									<img loading="lazy" src="../img/bg/banner-6.png" alt="" class="banner">
+									<div class="shadow">
+										<div class="shadow-1"></div>
+										<div class="shadow-2"></div>
+									</div>
+								</div>
+								<div class="main-home__body">
+									<div class="main-home__item">
+										<div class="main-home__text">
+											В подарок
+										</div>
+										<div class="main-home__title">сигнализация</div>
+										<a href="#" data-popup="#leave-request" class="main-home__button button">
+											Оставить заявку
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-home__arrows arrows">
+						<div class="main-home__arrow-prev arrow-prev _icon-arrow"></div>
+						<div class="main-home__arrow-next arrow-next _icon-arrow"></div>
+					</div>
+					<div class="main-home__pagination pagination"></div>
+				</div>
+			</div>
+			<div class="page__search search">
+				<div class="search__container">
+					<div class="search__content">
+						<div class="search__titles">
+							<div class="search__title">Подобрать автомобиль</div>
+						</div>
+						<div class="search__body">
+							<div class="search__top">
+								<div class="search__inputs">
+									<div class="search__input">
+										<div class="search__select select">
+											<div class="select__label">Выберите марку</div>
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__btntext">
+														<input autocomplete="off" type="text" name="form[]" value=""
+															placeholder="Все марки">
+														<div class="select__arrow _icon-arrow"></div>
+													</div>
+												</div>
+												<div class="select__body">
+													<div class="select__options">
+														<div class="select__option">
+															<div class="select__option-text">
+																Все марки_1
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все марки_2
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все марки_3
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="search__input">
+										<div class="search__select select">
+											<div class="select__label">Выберите модель</div>
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__btntext">
+														<input autocomplete="off" type="text" name="form[]" value=""
+															placeholder="Все модели">
+														<div class="select__arrow _icon-arrow"></div>
+													</div>
+												</div>
+												<div class="select__body">
+													<div class="select__options">
+														<div class="select__option">
+															<div class="select__option-text">
+																Все модели_1
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все модели_2
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все модели_3
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="search__input">
+										<div class="search__select select">
+											<div class="select__label">Выберите КПП</div>
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__btntext">
+														<input autocomplete="off" type="text" name="form[]" value=""
+															placeholder="Все КПП">
+														<div class="select__arrow _icon-arrow"></div>
+													</div>
+												</div>
+												<div class="select__body">
+													<div class="select__options">
+														<div class="select__option">
+															<div class="select__option-text">
+																Все КПП_1
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все КПП_2
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все КПП_3
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все КПП_3
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все КПП_3
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="search__input">
+										<div class="search__select select">
+											<div class="select__label">Выберите кузов</div>
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__btntext">
+														<input autocomplete="off" type="text" name="form[]" value=""
+															placeholder="Все кузовы">
+														<div class="select__arrow _icon-arrow"></div>
+													</div>
+												</div>
+												<div class="select__body">
+													<div class="select__options">
+														<div class="select__option">
+															<div class="select__option-text">
+																Все кузовы_1
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все кузовы_2
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все кузовы_3
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="search__input">
+										<div class="search__select select">
+											<div class="select__label">Выберите привод</div>
+											<div class="select__menu">
+												<div class="select__btn">
+													<div class="select__btntext">
+														<input autocomplete="off" type="text" name="form[]" value=""
+															placeholder="Все приводы">
+														<div class="select__arrow _icon-arrow"></div>
+													</div>
+												</div>
+												<div class="select__body">
+													<div class="select__options">
+														<div class="select__option">
+															<div class="select__option-text">
+																Все приводы_1
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все приводы_2
+															</div>
+														</div>
+														<div class="select__option">
+															<div class="select__option-text">
+																Все приводы_3
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="search__bottom">
+								<div class="search__ratings">
+									<div class="search__rating rating-search">
+										<div class="rating-search__values">
+											<div class="rating-search__value">
+												<label for="price-start" class="price-lbl">Цена от:</label>
+												<div class="rating-search__input">
+													<input id="price-start" placeholder="0" value="399 900" type="text">
+													<span>₽</span>
+												</div>
+											</div>
+											<div class="rating-search__value">
+												<label for="price-end" class="price-lbl">Цена до:</label>
+												<div class="rating-search__input">
+													<input id="price-end" placeholder="0" value="1 399 900" type="text">
+													<span>₽</span>
+												</div>
+											</div>
+										</div>
+										<div class="rating-search__range search-range"></div>
+									</div>
+								</div>
+								<div class="search__buttons">
+									<div class="search__button">
+										<a href="#" class="button">Подобрать</a>
+									</div>
+									<div class="search__button">
+										<button type="button" class="button-transparent clear">Сбросить</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__brands brands">
+				<div class="brands__container">
+					<div class="brands__top top">
+						<h2><span>ПОИСК</span> ПО МАРКАМ</h2>
+					</div>
+					<div class="brands__body">
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/baic.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">BAIC</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/audi.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Audi</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/dfm.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">DFM</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/datsun.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Datsun</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/exeed.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">EXEED</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/faw.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">FAW</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/jac.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">JAC</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/jetta.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">JETTA</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/kaiyi.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">KAIYI</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/kia.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">KIA</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/livan.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">LIVAN</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/omoda.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">OMODA</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/ravon.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Ravon</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/renault.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Renault</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/volkswagen.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Volkswagen</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/zotye.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Zotye</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/lada.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Lada</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/lifan.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Lifan</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/nissan.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Nisan</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/bmw.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">BMW</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/changan.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Changan</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/chery.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Chery</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/chevrolet.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Chevrolet</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/hyundai.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Hyundai</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/skoda.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Skoda</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/subaru.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Subaru</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/land-rover.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Land Rover</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/mercedes-benz.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Mercedes-Benz</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/geely.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Geely</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+						<div class="brands__column">
+							<a href="#" class="brands__item">
+								<div class="brands__image">
+									<img loading="lazy" src="../img/brands/haval.svg" alt="">
+								</div>
+								<div class="brands__desc">
+									<div class="brands__title">Haval</div>
+									<div class="brands__subtitle">30 авто</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<button type="button" class="brands__button button-transparent">Смотреть ещё</button>
+				</div>
+			</div>
+			<div class="page__products products">
+				<div class="products__container">
+					<div class="products__top top">
+						<h2><span>Новые</span> поступления</h2>
+						<div class="products__arrows arrows">
+							<div class="products__arrow-prev arrow-prev _icon-arrow"></div>
+							<div class="products__arrow-next arrow-next _icon-arrow"></div>
+						</div>
+					</div>
+					<div class="products__body">
+						<div class="products__slider swiper">
+							<div class="products__wrapper swiper-wrapper">
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__pagination pagination"></div>
+					</div>
+					<a href="#" class="products__button-more button-transparent">Смотреть ещё</a>
+				</div>
+			</div>
+			<div class="page__forms forms forms-banner">
+				<div class="forms__bg">
+					<img loading="lazy" src="../img/bg/banner-7.png" alt="">
+				</div>
+				<div class="forms__container">
+					<div class="forms__content">
+						<div class="forms__titles">
+							<div class="forms__title">
+								Скидка 300 000 ₽ на авто в кредит
+							</div>
+							<div class="forms__subtitle">
+								Оставьте заявку и получите скидку до 300 000 ₽
+							</div>
+						</div>
+						<form action="#" class="forms__form form">
+							<div class="form__inputs">
+								<div class="form__input">
+									<input type="text" name="form[]" placeholder="Имя">
+								</div>
+								<div class="form__input">
+									<input data-required type="text" name="form[]" placeholder="+7 999 999-99-99"
+										class="telephone">
+								</div>
+								<div class="form__input">
+									<button type="submit" class="form__button button">Отправить заявку</button>
+								</div>
+							</div>
+							<div class="form__checkbox checkbox">
+								<input data-required id="c_1" checked class="checkbox__input" type="checkbox" value="1"
+									name="form[]">
+								<label for="c_1" class="checkbox__label">
+									<span class="checkbox__icon _icon-check"></span>
+									<span class="checkbox__text">Я согласен с политикой обработки <a
+											href="#">персональных данных</a></span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="page__products products">
+				<div class="products__container">
+					<div class="products__top top">
+						<h2><span>СПЕЦИАЛЬНЫЕ</span> пРЕДЛОЖЕНИЯ</h2>
+						<div class="products__arrows arrows">
+							<div class="products__arrow-prev arrow-prev _icon-arrow"></div>
+							<div class="products__arrow-next arrow-next _icon-arrow"></div>
+						</div>
+					</div>
+					<div class="products__body">
+						<div class="products__slider swiper">
+							<div class="products__wrapper swiper-wrapper">
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+											<div class="products__sale">- 30%</div>
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+											<div class="products__sale">- 30%</div>
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+											<div class="products__sale">- 30%</div>
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+											<div class="products__sale">- 30%</div>
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+											<div class="products__sale">- 30%</div>
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+											<div class="products__sale">- 30%</div>
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__item">
+										<div class="products__image">
+											<img loading="lazy" src="../img/products/image-1.png" alt="">
+											<div class="products__sale">- 30%</div>
+										</div>
+										<div class="products__desc">
+											<a href="#" class="products__title">Lada Granta</a>
+											<div class="products__prices">
+												<div class="products__price">от <span>348 000 ₽</span></div>
+												<s class="products__old-price">от 699 000 ₽</s>
+											</div>
+											<div class="products__stock">
+												В наличии: 2 автомобиля
+											</div>
+											<a href="#" data-popup="#leave-request"
+												class="products__button button">Оставить заявку</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__pagination pagination"></div>
+					</div>
+					<a href="#" class="products__button-more button-transparent">Смотреть ещё</a>
+				</div>
+			</div>
+			<div class="page__about about">
+				<div class="about__container">
+					<div class="about__top top">
+						<h2><span>О нашем</span> автосалоне</h2>
+					</div>
+					<div class="about__body">
+						<div class="about__image">
+							<img loading="lazy" src="../img/image-1.png" alt="">
+						</div>
+						<div class="about__content">
+							<svg width="969" height="584" viewBox="0 0 969 584" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g filter="url(#filter0_d_636_14964)">
+									<path d="M19 19H950L826.435 565H19V19Z" fill="white" />
+								</g>
+								<defs>
+									<filter id="filter0_d_636_14964" x="0.5" y="0.5" width="968" height="583"
+										filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+										<feOffset />
+										<feGaussianBlur stdDeviation="9.25" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix"
+											values="0 0 0 0 0.2 0 0 0 0 0.223529 0 0 0 0 0.72549 0 0 0 0.12 0" />
+										<feBlend mode="normal" in2="BackgroundImageFix"
+											result="effect1_dropShadow_636_14964" />
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_636_14964"
+											result="shape" />
+									</filter>
+								</defs>
+							</svg>
+							<div class="about__item">
+								<div class="about__titles">
+									<div class="about__title">Автосалон мультибрендовых автомобилей</div>
+									<div class="about__subtitle">
+										Основные принципы работы компании — это открытость, инновации, нацеленность
+										на результат.
+									</div>
+								</div>
+								<div class="about__center">
+									<div class="about__column center-about-column">
+										<div class="about__number">10+</div>
+										<span>лет работы нашего автосалона</span>
+									</div>
+									<div class="about__column">
+										<div class="about__number">1000+</div>
+										<span>довольных клиентов</span>
+									</div>
+									<div class="about__column">
+										<div class="about__number">1500+</div>
+										<span>автомобилей в наличии</span>
+									</div>
+								</div>
+								<div class="about__buttons">
+									<a href="#" class="about__button button">Связаться с нами</a>
+									<a href="#" class="about__button button-transparent">В каталог</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__sales sales">
+				<div class="sales__container">
+					<div class="sales__top top">
+						<h2><span>Акции</span> и специальные предложения</h2>
+					</div>
+					<div class="sales__body">
+						<div class="sales__column">
+							<div class="sales__item">
+								<div class="sales__image">
+									<img loading="lazy" src="../img/sales/image-1.png" alt="">
+								</div>
+								<div class="sales__desc">
+									<div class="sales__titles">
+										<div class="sales__title">
+											Низкий процент по кредиту с банками партнёрами
+										</div>
+									</div>
+									<a href="#" data-popup="#leave-request" class="sales__button button">Получить
+										предложение</a>
+								</div>
+							</div>
+						</div>
+						<div class="sales__column">
+							<div class="sales__item">
+								<div class="sales__image">
+									<img loading="lazy" src="../img/sales/image-2.png" alt="">
+								</div>
+								<div class="sales__desc">
+									<div class="sales__titles">
+										<div class="sales__title">
+											КАСКО и ОСАГО в подарок при покупке авто в кредит
+										</div>
+									</div>
+									<a href="#" data-popup="#leave-request" class="sales__button button">Получить
+										предложение</a>
+								</div>
+							</div>
+						</div>
+						<div class="sales__column">
+							<div class="sales__item">
+								<div class="sales__image">
+									<img loading="lazy" src="../img/sales/image-3.png" alt="">
+								</div>
+								<div class="sales__desc">
+									<div class="sales__titles">
+										<div class="sales__title">
+											Получите выгоду по Trade-In до 300 000 ₽
+										</div>
+									</div>
+									<a href="#" data-popup="#leave-request" class="sales__button button">Получить
+										предложение</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_popup-leave-request.htm',{})
+	<!--испытайте удачу-->
+	<div id="fortune" aria-hidden="true" class="popup fix-block popup-other">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M21 21L1 1M21 1L1 21" stroke="black" stroke-width="2" stroke-linecap="round" />
+					</svg>
+				</button>
+				<div class="popup__fortune fortune-popup">
+					<div class="fortune-popup__titles">
+						<div class="fortune-popup__title">
+							Испытайте удачу
+						</div>
+						<div class="fortune-popup__subtitle">
+							Подарим подарок каждому посетителю сайта, просто нажмите кнопку
+						</div>
+					</div>
+					<div class="fortune-popup__content">
+						<div class="fortune-popup__track">
+							<div data-id="1" data-prize="navigator" class="fortune-popup__slide">
+								<div class="fortune-popup__images">
+									<svg width="318" height="162" viewBox="0 0 318 162" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 19.3631C0 18.8739 0.397095 18.4778 0.885531 18.4556C10.368 18.0062 17.9764 10.3851 18.4247 0.886861C18.4477 0.39761 18.8418 0 19.3309 0H298.669C299.158 0 299.553 0.39761 299.575 0.886861C300.024 10.3851 307.632 18.0062 317.115 18.4556C317.603 18.4778 318 18.8739 318 19.3631V21.5803C318 22.0695 317.602 22.4598 317.118 22.5366C314.441 22.9594 312.393 25.2829 312.393 28.0839C312.393 30.8849 314.441 33.2085 317.118 33.6313C317.602 33.7081 318 34.0983 318 34.5876V36.8047C318 37.294 317.602 37.6842 317.118 37.7537C314.439 38.1395 312.393 40.2472 312.393 42.7911C312.393 45.3349 314.439 47.4426 317.118 47.8284C317.602 47.8979 318 48.2881 318 48.7774V50.9945C318 51.4838 317.602 51.874 317.118 51.9509C314.441 52.3736 312.393 54.6972 312.393 57.4982C312.393 60.2992 314.441 62.6228 317.118 63.0455C317.602 63.1224 318 63.5126 318 64.0018V66.3668C318 66.856 317.602 67.2463 317.118 67.3216C314.441 67.7399 312.393 70.0325 312.393 72.7965C312.393 75.5606 314.441 77.8531 317.118 78.2714C317.602 78.3468 318 78.737 318 79.2263V81.5912C318 82.0805 317.602 82.4707 317.118 82.5476C314.441 82.9703 312.393 85.2939 312.393 88.0949C312.393 90.8959 314.441 93.2195 317.118 93.6422C317.602 93.7191 318 94.1093 318 94.5985V96.8157C318 97.3049 317.602 97.6952 317.118 97.772C314.441 98.1948 312.393 100.518 312.393 103.319C312.393 106.12 314.441 108.444 317.118 108.867C317.602 108.944 318 109.334 318 109.823V112.04C318 112.529 317.602 112.92 317.118 112.996C314.441 113.419 312.393 115.743 312.393 118.544C312.393 121.345 314.441 123.668 317.118 124.091C317.602 124.168 318 124.558 318 125.047V127.265C318 127.754 317.602 128.144 317.118 128.221C314.441 128.644 312.393 130.967 312.393 133.768C312.393 136.569 314.441 138.893 317.118 139.316C317.602 139.392 318 139.783 318 140.272V142.637C318 143.126 317.603 143.522 317.115 143.544C307.632 143.994 300.024 151.615 299.575 161.113C299.553 161.602 299.158 162 298.669 162H19.3309C18.8418 162 18.4477 161.602 18.4247 161.113C17.9764 151.615 10.368 143.994 0.885531 143.544C0.397095 143.522 0 143.126 0 142.637V140.272C0 139.783 0.399011 139.392 0.881987 139.316C3.55983 138.893 5.60742 136.569 5.60742 133.768C5.60742 130.967 3.55983 128.644 0.881987 128.221C0.399011 128.144 0 127.754 0 127.265V125.047C0 124.558 0.399011 124.168 0.881987 124.091C3.55983 123.668 5.60742 121.345 5.60742 118.544C5.60742 115.743 3.55983 113.419 0.881987 112.996C0.399011 112.92 0 112.529 0 112.04V109.823C0 109.334 0.399011 108.944 0.881987 108.867C3.55983 108.444 5.60742 106.12 5.60742 103.319C5.60742 100.518 3.55983 98.1948 0.881987 97.772C0.399011 97.6952 0 97.3049 0 96.8157V94.5985C0 94.1093 0.399011 93.7191 0.881987 93.6422C3.55983 93.2195 5.60742 90.8959 5.60742 88.0949C5.60742 85.2939 3.55983 82.9703 0.881987 82.5476C0.399011 82.4707 0 82.0805 0 81.5912V79.2263C0 78.737 0.398864 78.3468 0.882136 78.2714C3.55983 77.8531 5.60742 75.5606 5.60742 72.7965C5.60742 70.0325 3.55983 67.7399 0.882136 67.3216C0.398864 67.2463 0 66.856 0 66.3668V64.0018C0 63.5126 0.399011 63.1224 0.881987 63.0455C3.55983 62.6228 5.60742 60.2992 5.60742 57.4982C5.60742 54.6972 3.55983 52.3736 0.881987 51.9509C0.399011 51.874 0 51.4838 0 50.9945V48.7774C0 48.2881 0.398568 47.8979 0.882577 47.8284C3.56012 47.4426 5.60742 45.3349 5.60742 42.7911C5.60742 40.2472 3.56012 38.1395 0.882577 37.7537C0.398568 37.6842 0 37.294 0 36.8047V34.5876C0 34.0983 0.399011 33.7081 0.881987 33.6313C3.55983 33.2085 5.60742 30.8849 5.60742 28.0839C5.60742 25.2829 3.55983 22.9594 0.881987 22.5366C0.399011 22.4598 0 22.0695 0 21.5803V19.3631Z"
+											fill="#043668" />
+										<path
+											d="M15.4242 26.3124C24.2227 25.8681 31.2965 19.0094 31.7671 10.4253L30.7381 10.3694C30.2977 18.4063 23.6663 24.865 15.3723 25.2842L15.4242 26.3124ZM15.0305 135.296V26.7036H14V135.296H15.0305ZM15.3723 136.716C23.6663 137.135 30.2977 143.594 30.7381 151.631L31.7671 151.575C31.2965 142.991 24.2227 136.132 15.4242 135.688L15.3723 136.716ZM285.84 151.97H32.16V153H285.84V151.97ZM287.262 151.631C287.703 143.594 294.334 137.135 302.628 136.716L302.575 135.688C293.778 136.132 286.703 142.991 286.233 151.575L287.262 151.631ZM302.97 26.7036V135.296H304V26.7036H302.97ZM302.628 25.2842C294.334 24.865 287.703 18.4063 287.262 10.3694L286.233 10.4253C286.703 19.0094 293.778 25.8681 302.575 26.3124L302.628 25.2842ZM32.16 10.0296H285.84V9H32.16V10.0296ZM287.262 10.3694C287.221 9.62808 286.619 9 285.84 9V10.0296C286.036 10.0296 286.22 10.1929 286.233 10.4253L287.262 10.3694ZM304 26.7036C304 25.9255 303.371 25.3224 302.628 25.2842L302.575 26.3124C302.806 26.3241 302.97 26.5065 302.97 26.7036H304ZM302.628 136.716C303.371 136.678 304 136.074 304 135.296H302.97C302.97 135.493 302.806 135.676 302.575 135.688L302.628 136.716ZM285.84 153C286.619 153 287.221 152.372 287.262 151.631L286.233 151.575C286.22 151.807 286.036 151.97 285.84 151.97V153ZM30.7381 151.631C30.7789 152.372 31.3807 153 32.16 153V151.97C31.9638 151.97 31.7798 151.807 31.7671 151.575L30.7381 151.631ZM14 135.296C14 136.074 14.6278 136.678 15.3723 136.716L15.4242 135.688C15.1943 135.676 15.0305 135.493 15.0305 135.296H14ZM31.7671 10.4253C31.7798 10.1929 31.9638 10.0296 32.16 10.0296V9C31.3807 9 30.7789 9.62808 30.7381 10.3694L31.7671 10.4253ZM15.3723 25.2842C14.6278 25.3224 14 25.9255 14 26.7036H15.0305C15.0305 26.5065 15.1943 26.3241 15.4242 26.3124L15.3723 25.2842Z"
+											fill="white" />
+									</svg>
+									<div class="fortune-popup__image-text">
+										<div class="fortune-popup__dots"></div>
+										Навигатор
+										<div class="fortune-popup__dots"></div>
+									</div>
+								</div>
+							</div>
+							<div data-id="2" data-prize="300-liters-gasoline" class="fortune-popup__slide">
+								<div class="fortune-popup__images">
+									<svg width="318" height="162" viewBox="0 0 318 162" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 19.3631C0 18.8739 0.397095 18.4778 0.885531 18.4556C10.368 18.0062 17.9764 10.3851 18.4247 0.886861C18.4477 0.39761 18.8418 0 19.3309 0H298.669C299.158 0 299.553 0.39761 299.575 0.886861C300.024 10.3851 307.632 18.0062 317.115 18.4556C317.603 18.4778 318 18.8739 318 19.3631V21.5803C318 22.0695 317.602 22.4598 317.118 22.5366C314.441 22.9594 312.393 25.2829 312.393 28.0839C312.393 30.8849 314.441 33.2085 317.118 33.6313C317.602 33.7081 318 34.0983 318 34.5876V36.8047C318 37.294 317.602 37.6842 317.118 37.7537C314.439 38.1395 312.393 40.2472 312.393 42.7911C312.393 45.3349 314.439 47.4426 317.118 47.8284C317.602 47.8979 318 48.2881 318 48.7774V50.9945C318 51.4838 317.602 51.874 317.118 51.9509C314.441 52.3736 312.393 54.6972 312.393 57.4982C312.393 60.2992 314.441 62.6228 317.118 63.0455C317.602 63.1224 318 63.5126 318 64.0018V66.3668C318 66.856 317.602 67.2463 317.118 67.3216C314.441 67.7399 312.393 70.0325 312.393 72.7965C312.393 75.5606 314.441 77.8531 317.118 78.2714C317.602 78.3468 318 78.737 318 79.2263V81.5912C318 82.0805 317.602 82.4707 317.118 82.5476C314.441 82.9703 312.393 85.2939 312.393 88.0949C312.393 90.8959 314.441 93.2195 317.118 93.6422C317.602 93.7191 318 94.1093 318 94.5985V96.8157C318 97.3049 317.602 97.6952 317.118 97.772C314.441 98.1948 312.393 100.518 312.393 103.319C312.393 106.12 314.441 108.444 317.118 108.867C317.602 108.944 318 109.334 318 109.823V112.04C318 112.529 317.602 112.92 317.118 112.996C314.441 113.419 312.393 115.743 312.393 118.544C312.393 121.345 314.441 123.668 317.118 124.091C317.602 124.168 318 124.558 318 125.047V127.265C318 127.754 317.602 128.144 317.118 128.221C314.441 128.644 312.393 130.967 312.393 133.768C312.393 136.569 314.441 138.893 317.118 139.316C317.602 139.392 318 139.783 318 140.272V142.637C318 143.126 317.603 143.522 317.115 143.544C307.632 143.994 300.024 151.615 299.575 161.113C299.553 161.602 299.158 162 298.669 162H19.3309C18.8418 162 18.4477 161.602 18.4247 161.113C17.9764 151.615 10.368 143.994 0.885531 143.544C0.397095 143.522 0 143.126 0 142.637V140.272C0 139.783 0.399011 139.392 0.881987 139.316C3.55983 138.893 5.60742 136.569 5.60742 133.768C5.60742 130.967 3.55983 128.644 0.881987 128.221C0.399011 128.144 0 127.754 0 127.265V125.047C0 124.558 0.399011 124.168 0.881987 124.091C3.55983 123.668 5.60742 121.345 5.60742 118.544C5.60742 115.743 3.55983 113.419 0.881987 112.996C0.399011 112.92 0 112.529 0 112.04V109.823C0 109.334 0.399011 108.944 0.881987 108.867C3.55983 108.444 5.60742 106.12 5.60742 103.319C5.60742 100.518 3.55983 98.1948 0.881987 97.772C0.399011 97.6952 0 97.3049 0 96.8157V94.5985C0 94.1093 0.399011 93.7191 0.881987 93.6422C3.55983 93.2195 5.60742 90.8959 5.60742 88.0949C5.60742 85.2939 3.55983 82.9703 0.881987 82.5476C0.399011 82.4707 0 82.0805 0 81.5912V79.2263C0 78.737 0.398864 78.3468 0.882136 78.2714C3.55983 77.8531 5.60742 75.5606 5.60742 72.7965C5.60742 70.0325 3.55983 67.7399 0.882136 67.3216C0.398864 67.2463 0 66.856 0 66.3668V64.0018C0 63.5126 0.399011 63.1224 0.881987 63.0455C3.55983 62.6228 5.60742 60.2992 5.60742 57.4982C5.60742 54.6972 3.55983 52.3736 0.881987 51.9509C0.399011 51.874 0 51.4838 0 50.9945V48.7774C0 48.2881 0.398568 47.8979 0.882577 47.8284C3.56012 47.4426 5.60742 45.3349 5.60742 42.7911C5.60742 40.2472 3.56012 38.1395 0.882577 37.7537C0.398568 37.6842 0 37.294 0 36.8047V34.5876C0 34.0983 0.399011 33.7081 0.881987 33.6313C3.55983 33.2085 5.60742 30.8849 5.60742 28.0839C5.60742 25.2829 3.55983 22.9594 0.881987 22.5366C0.399011 22.4598 0 22.0695 0 21.5803V19.3631Z"
+											fill="#043668" />
+										<path
+											d="M15.4242 26.3124C24.2227 25.8681 31.2965 19.0094 31.7671 10.4253L30.7381 10.3694C30.2977 18.4063 23.6663 24.865 15.3723 25.2842L15.4242 26.3124ZM15.0305 135.296V26.7036H14V135.296H15.0305ZM15.3723 136.716C23.6663 137.135 30.2977 143.594 30.7381 151.631L31.7671 151.575C31.2965 142.991 24.2227 136.132 15.4242 135.688L15.3723 136.716ZM285.84 151.97H32.16V153H285.84V151.97ZM287.262 151.631C287.703 143.594 294.334 137.135 302.628 136.716L302.575 135.688C293.778 136.132 286.703 142.991 286.233 151.575L287.262 151.631ZM302.97 26.7036V135.296H304V26.7036H302.97ZM302.628 25.2842C294.334 24.865 287.703 18.4063 287.262 10.3694L286.233 10.4253C286.703 19.0094 293.778 25.8681 302.575 26.3124L302.628 25.2842ZM32.16 10.0296H285.84V9H32.16V10.0296ZM287.262 10.3694C287.221 9.62808 286.619 9 285.84 9V10.0296C286.036 10.0296 286.22 10.1929 286.233 10.4253L287.262 10.3694ZM304 26.7036C304 25.9255 303.371 25.3224 302.628 25.2842L302.575 26.3124C302.806 26.3241 302.97 26.5065 302.97 26.7036H304ZM302.628 136.716C303.371 136.678 304 136.074 304 135.296H302.97C302.97 135.493 302.806 135.676 302.575 135.688L302.628 136.716ZM285.84 153C286.619 153 287.221 152.372 287.262 151.631L286.233 151.575C286.22 151.807 286.036 151.97 285.84 151.97V153ZM30.7381 151.631C30.7789 152.372 31.3807 153 32.16 153V151.97C31.9638 151.97 31.7798 151.807 31.7671 151.575L30.7381 151.631ZM14 135.296C14 136.074 14.6278 136.678 15.3723 136.716L15.4242 135.688C15.1943 135.676 15.0305 135.493 15.0305 135.296H14ZM31.7671 10.4253C31.7798 10.1929 31.9638 10.0296 32.16 10.0296V9C31.3807 9 30.7789 9.62808 30.7381 10.3694L31.7671 10.4253ZM15.3723 25.2842C14.6278 25.3224 14 25.9255 14 26.7036H15.0305C15.0305 26.5065 15.1943 26.3241 15.4242 26.3124L15.3723 25.2842Z"
+											fill="white" />
+									</svg>
+									<div class="fortune-popup__image-text">
+										<div class="fortune-popup__dots"></div>
+										300л<br> бензина
+										<div class="fortune-popup__dots"></div>
+									</div>
+								</div>
+							</div>
+							<div data-id="3" data-prize="payments-loan" class="fortune-popup__slide">
+								<div class="fortune-popup__images">
+									<svg width="318" height="162" viewBox="0 0 318 162" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 19.3631C0 18.8739 0.397095 18.4778 0.885531 18.4556C10.368 18.0062 17.9764 10.3851 18.4247 0.886861C18.4477 0.39761 18.8418 0 19.3309 0H298.669C299.158 0 299.553 0.39761 299.575 0.886861C300.024 10.3851 307.632 18.0062 317.115 18.4556C317.603 18.4778 318 18.8739 318 19.3631V21.5803C318 22.0695 317.602 22.4598 317.118 22.5366C314.441 22.9594 312.393 25.2829 312.393 28.0839C312.393 30.8849 314.441 33.2085 317.118 33.6313C317.602 33.7081 318 34.0983 318 34.5876V36.8047C318 37.294 317.602 37.6842 317.118 37.7537C314.439 38.1395 312.393 40.2472 312.393 42.7911C312.393 45.3349 314.439 47.4426 317.118 47.8284C317.602 47.8979 318 48.2881 318 48.7774V50.9945C318 51.4838 317.602 51.874 317.118 51.9509C314.441 52.3736 312.393 54.6972 312.393 57.4982C312.393 60.2992 314.441 62.6228 317.118 63.0455C317.602 63.1224 318 63.5126 318 64.0018V66.3668C318 66.856 317.602 67.2463 317.118 67.3216C314.441 67.7399 312.393 70.0325 312.393 72.7965C312.393 75.5606 314.441 77.8531 317.118 78.2714C317.602 78.3468 318 78.737 318 79.2263V81.5912C318 82.0805 317.602 82.4707 317.118 82.5476C314.441 82.9703 312.393 85.2939 312.393 88.0949C312.393 90.8959 314.441 93.2195 317.118 93.6422C317.602 93.7191 318 94.1093 318 94.5985V96.8157C318 97.3049 317.602 97.6952 317.118 97.772C314.441 98.1948 312.393 100.518 312.393 103.319C312.393 106.12 314.441 108.444 317.118 108.867C317.602 108.944 318 109.334 318 109.823V112.04C318 112.529 317.602 112.92 317.118 112.996C314.441 113.419 312.393 115.743 312.393 118.544C312.393 121.345 314.441 123.668 317.118 124.091C317.602 124.168 318 124.558 318 125.047V127.265C318 127.754 317.602 128.144 317.118 128.221C314.441 128.644 312.393 130.967 312.393 133.768C312.393 136.569 314.441 138.893 317.118 139.316C317.602 139.392 318 139.783 318 140.272V142.637C318 143.126 317.603 143.522 317.115 143.544C307.632 143.994 300.024 151.615 299.575 161.113C299.553 161.602 299.158 162 298.669 162H19.3309C18.8418 162 18.4477 161.602 18.4247 161.113C17.9764 151.615 10.368 143.994 0.885531 143.544C0.397095 143.522 0 143.126 0 142.637V140.272C0 139.783 0.399011 139.392 0.881987 139.316C3.55983 138.893 5.60742 136.569 5.60742 133.768C5.60742 130.967 3.55983 128.644 0.881987 128.221C0.399011 128.144 0 127.754 0 127.265V125.047C0 124.558 0.399011 124.168 0.881987 124.091C3.55983 123.668 5.60742 121.345 5.60742 118.544C5.60742 115.743 3.55983 113.419 0.881987 112.996C0.399011 112.92 0 112.529 0 112.04V109.823C0 109.334 0.399011 108.944 0.881987 108.867C3.55983 108.444 5.60742 106.12 5.60742 103.319C5.60742 100.518 3.55983 98.1948 0.881987 97.772C0.399011 97.6952 0 97.3049 0 96.8157V94.5985C0 94.1093 0.399011 93.7191 0.881987 93.6422C3.55983 93.2195 5.60742 90.8959 5.60742 88.0949C5.60742 85.2939 3.55983 82.9703 0.881987 82.5476C0.399011 82.4707 0 82.0805 0 81.5912V79.2263C0 78.737 0.398864 78.3468 0.882136 78.2714C3.55983 77.8531 5.60742 75.5606 5.60742 72.7965C5.60742 70.0325 3.55983 67.7399 0.882136 67.3216C0.398864 67.2463 0 66.856 0 66.3668V64.0018C0 63.5126 0.399011 63.1224 0.881987 63.0455C3.55983 62.6228 5.60742 60.2992 5.60742 57.4982C5.60742 54.6972 3.55983 52.3736 0.881987 51.9509C0.399011 51.874 0 51.4838 0 50.9945V48.7774C0 48.2881 0.398568 47.8979 0.882577 47.8284C3.56012 47.4426 5.60742 45.3349 5.60742 42.7911C5.60742 40.2472 3.56012 38.1395 0.882577 37.7537C0.398568 37.6842 0 37.294 0 36.8047V34.5876C0 34.0983 0.399011 33.7081 0.881987 33.6313C3.55983 33.2085 5.60742 30.8849 5.60742 28.0839C5.60742 25.2829 3.55983 22.9594 0.881987 22.5366C0.399011 22.4598 0 22.0695 0 21.5803V19.3631Z"
+											fill="#043668" />
+										<path
+											d="M15.4242 26.3124C24.2227 25.8681 31.2965 19.0094 31.7671 10.4253L30.7381 10.3694C30.2977 18.4063 23.6663 24.865 15.3723 25.2842L15.4242 26.3124ZM15.0305 135.296V26.7036H14V135.296H15.0305ZM15.3723 136.716C23.6663 137.135 30.2977 143.594 30.7381 151.631L31.7671 151.575C31.2965 142.991 24.2227 136.132 15.4242 135.688L15.3723 136.716ZM285.84 151.97H32.16V153H285.84V151.97ZM287.262 151.631C287.703 143.594 294.334 137.135 302.628 136.716L302.575 135.688C293.778 136.132 286.703 142.991 286.233 151.575L287.262 151.631ZM302.97 26.7036V135.296H304V26.7036H302.97ZM302.628 25.2842C294.334 24.865 287.703 18.4063 287.262 10.3694L286.233 10.4253C286.703 19.0094 293.778 25.8681 302.575 26.3124L302.628 25.2842ZM32.16 10.0296H285.84V9H32.16V10.0296ZM287.262 10.3694C287.221 9.62808 286.619 9 285.84 9V10.0296C286.036 10.0296 286.22 10.1929 286.233 10.4253L287.262 10.3694ZM304 26.7036C304 25.9255 303.371 25.3224 302.628 25.2842L302.575 26.3124C302.806 26.3241 302.97 26.5065 302.97 26.7036H304ZM302.628 136.716C303.371 136.678 304 136.074 304 135.296H302.97C302.97 135.493 302.806 135.676 302.575 135.688L302.628 136.716ZM285.84 153C286.619 153 287.221 152.372 287.262 151.631L286.233 151.575C286.22 151.807 286.036 151.97 285.84 151.97V153ZM30.7381 151.631C30.7789 152.372 31.3807 153 32.16 153V151.97C31.9638 151.97 31.7798 151.807 31.7671 151.575L30.7381 151.631ZM14 135.296C14 136.074 14.6278 136.678 15.3723 136.716L15.4242 135.688C15.1943 135.676 15.0305 135.493 15.0305 135.296H14ZM31.7671 10.4253C31.7798 10.1929 31.9638 10.0296 32.16 10.0296V9C31.3807 9 30.7789 9.62808 30.7381 10.3694L31.7671 10.4253ZM15.3723 25.2842C14.6278 25.3224 14 25.9255 14 26.7036H15.0305C15.0305 26.5065 15.1943 26.3241 15.4242 26.3124L15.3723 25.2842Z"
+											fill="white" />
+									</svg>
+									<div class="fortune-popup__image-text">
+										<div class="fortune-popup__dots"></div>
+										3 платежа<br> по кредиту
+										<div class="fortune-popup__dots"></div>
+									</div>
+								</div>
+							</div>
+							<div data-id="4" data-prize="winter-tires" class="fortune-popup__slide">
+								<div class="fortune-popup__images">
+									<svg width="318" height="162" viewBox="0 0 318 162" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 19.3631C0 18.8739 0.397095 18.4778 0.885531 18.4556C10.368 18.0062 17.9764 10.3851 18.4247 0.886861C18.4477 0.39761 18.8418 0 19.3309 0H298.669C299.158 0 299.553 0.39761 299.575 0.886861C300.024 10.3851 307.632 18.0062 317.115 18.4556C317.603 18.4778 318 18.8739 318 19.3631V21.5803C318 22.0695 317.602 22.4598 317.118 22.5366C314.441 22.9594 312.393 25.2829 312.393 28.0839C312.393 30.8849 314.441 33.2085 317.118 33.6313C317.602 33.7081 318 34.0983 318 34.5876V36.8047C318 37.294 317.602 37.6842 317.118 37.7537C314.439 38.1395 312.393 40.2472 312.393 42.7911C312.393 45.3349 314.439 47.4426 317.118 47.8284C317.602 47.8979 318 48.2881 318 48.7774V50.9945C318 51.4838 317.602 51.874 317.118 51.9509C314.441 52.3736 312.393 54.6972 312.393 57.4982C312.393 60.2992 314.441 62.6228 317.118 63.0455C317.602 63.1224 318 63.5126 318 64.0018V66.3668C318 66.856 317.602 67.2463 317.118 67.3216C314.441 67.7399 312.393 70.0325 312.393 72.7965C312.393 75.5606 314.441 77.8531 317.118 78.2714C317.602 78.3468 318 78.737 318 79.2263V81.5912C318 82.0805 317.602 82.4707 317.118 82.5476C314.441 82.9703 312.393 85.2939 312.393 88.0949C312.393 90.8959 314.441 93.2195 317.118 93.6422C317.602 93.7191 318 94.1093 318 94.5985V96.8157C318 97.3049 317.602 97.6952 317.118 97.772C314.441 98.1948 312.393 100.518 312.393 103.319C312.393 106.12 314.441 108.444 317.118 108.867C317.602 108.944 318 109.334 318 109.823V112.04C318 112.529 317.602 112.92 317.118 112.996C314.441 113.419 312.393 115.743 312.393 118.544C312.393 121.345 314.441 123.668 317.118 124.091C317.602 124.168 318 124.558 318 125.047V127.265C318 127.754 317.602 128.144 317.118 128.221C314.441 128.644 312.393 130.967 312.393 133.768C312.393 136.569 314.441 138.893 317.118 139.316C317.602 139.392 318 139.783 318 140.272V142.637C318 143.126 317.603 143.522 317.115 143.544C307.632 143.994 300.024 151.615 299.575 161.113C299.553 161.602 299.158 162 298.669 162H19.3309C18.8418 162 18.4477 161.602 18.4247 161.113C17.9764 151.615 10.368 143.994 0.885531 143.544C0.397095 143.522 0 143.126 0 142.637V140.272C0 139.783 0.399011 139.392 0.881987 139.316C3.55983 138.893 5.60742 136.569 5.60742 133.768C5.60742 130.967 3.55983 128.644 0.881987 128.221C0.399011 128.144 0 127.754 0 127.265V125.047C0 124.558 0.399011 124.168 0.881987 124.091C3.55983 123.668 5.60742 121.345 5.60742 118.544C5.60742 115.743 3.55983 113.419 0.881987 112.996C0.399011 112.92 0 112.529 0 112.04V109.823C0 109.334 0.399011 108.944 0.881987 108.867C3.55983 108.444 5.60742 106.12 5.60742 103.319C5.60742 100.518 3.55983 98.1948 0.881987 97.772C0.399011 97.6952 0 97.3049 0 96.8157V94.5985C0 94.1093 0.399011 93.7191 0.881987 93.6422C3.55983 93.2195 5.60742 90.8959 5.60742 88.0949C5.60742 85.2939 3.55983 82.9703 0.881987 82.5476C0.399011 82.4707 0 82.0805 0 81.5912V79.2263C0 78.737 0.398864 78.3468 0.882136 78.2714C3.55983 77.8531 5.60742 75.5606 5.60742 72.7965C5.60742 70.0325 3.55983 67.7399 0.882136 67.3216C0.398864 67.2463 0 66.856 0 66.3668V64.0018C0 63.5126 0.399011 63.1224 0.881987 63.0455C3.55983 62.6228 5.60742 60.2992 5.60742 57.4982C5.60742 54.6972 3.55983 52.3736 0.881987 51.9509C0.399011 51.874 0 51.4838 0 50.9945V48.7774C0 48.2881 0.398568 47.8979 0.882577 47.8284C3.56012 47.4426 5.60742 45.3349 5.60742 42.7911C5.60742 40.2472 3.56012 38.1395 0.882577 37.7537C0.398568 37.6842 0 37.294 0 36.8047V34.5876C0 34.0983 0.399011 33.7081 0.881987 33.6313C3.55983 33.2085 5.60742 30.8849 5.60742 28.0839C5.60742 25.2829 3.55983 22.9594 0.881987 22.5366C0.399011 22.4598 0 22.0695 0 21.5803V19.3631Z"
+											fill="#043668" />
+										<path
+											d="M15.4242 26.3124C24.2227 25.8681 31.2965 19.0094 31.7671 10.4253L30.7381 10.3694C30.2977 18.4063 23.6663 24.865 15.3723 25.2842L15.4242 26.3124ZM15.0305 135.296V26.7036H14V135.296H15.0305ZM15.3723 136.716C23.6663 137.135 30.2977 143.594 30.7381 151.631L31.7671 151.575C31.2965 142.991 24.2227 136.132 15.4242 135.688L15.3723 136.716ZM285.84 151.97H32.16V153H285.84V151.97ZM287.262 151.631C287.703 143.594 294.334 137.135 302.628 136.716L302.575 135.688C293.778 136.132 286.703 142.991 286.233 151.575L287.262 151.631ZM302.97 26.7036V135.296H304V26.7036H302.97ZM302.628 25.2842C294.334 24.865 287.703 18.4063 287.262 10.3694L286.233 10.4253C286.703 19.0094 293.778 25.8681 302.575 26.3124L302.628 25.2842ZM32.16 10.0296H285.84V9H32.16V10.0296ZM287.262 10.3694C287.221 9.62808 286.619 9 285.84 9V10.0296C286.036 10.0296 286.22 10.1929 286.233 10.4253L287.262 10.3694ZM304 26.7036C304 25.9255 303.371 25.3224 302.628 25.2842L302.575 26.3124C302.806 26.3241 302.97 26.5065 302.97 26.7036H304ZM302.628 136.716C303.371 136.678 304 136.074 304 135.296H302.97C302.97 135.493 302.806 135.676 302.575 135.688L302.628 136.716ZM285.84 153C286.619 153 287.221 152.372 287.262 151.631L286.233 151.575C286.22 151.807 286.036 151.97 285.84 151.97V153ZM30.7381 151.631C30.7789 152.372 31.3807 153 32.16 153V151.97C31.9638 151.97 31.7798 151.807 31.7671 151.575L30.7381 151.631ZM14 135.296C14 136.074 14.6278 136.678 15.3723 136.716L15.4242 135.688C15.1943 135.676 15.0305 135.493 15.0305 135.296H14ZM31.7671 10.4253C31.7798 10.1929 31.9638 10.0296 32.16 10.0296V9C31.3807 9 30.7789 9.62808 30.7381 10.3694L31.7671 10.4253ZM15.3723 25.2842C14.6278 25.3224 14 25.9255 14 26.7036H15.0305C15.0305 26.5065 15.1943 26.3241 15.4242 26.3124L15.3723 25.2842Z"
+											fill="white" />
+									</svg>
+									<div class="fortune-popup__image-text">
+										<div class="fortune-popup__dots"></div>
+										зимняя
+										<br>
+										резина
+										<div class="fortune-popup__dots"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button data-da=".fortune-popup__titles, 767.98, last"
+							class="fortune-popup__button button-blue">Испытать удачу</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--консультация-->
+	<div id="consultation" aria-hidden="true" class="popup fix-block popup-other">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M21 21L1 1M21 1L1 21" stroke="black" stroke-width="2" stroke-linecap="round" />
+					</svg>
+				</button>
+				<div class="popup__forms forms-popup">
+					<div class="forms-popup__image">
+						<img src="../img/consultation-image.png" alt="">
+					</div>
+					<div class="forms-popup__body">
+						<div class="forms-popup__titles">
+							<div class="forms-popup__title">
+								Нужна консультация?
+							</div>
+							<div class="forms-popup__subtitle">
+								Перезвоним через 3 минуты и проконсультируем
+							</div>
+						</div>
+						<form action="#" class="forms-popup__form">
+							<div class="forms-popup__inputs">
+								<div class="forms-popup__input">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Имя">
+								</div>
+								<div class="forms-popup__input">
+									<input data-required autocomplete="off" type="text" name="form[]"
+										placeholder="Телефон">
+								</div>
+							</div>
+							<button type="submit" class="forms-popup__button button-blue">Отправить заявку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--оплата-->
+	<div id="payment-form" aria-hidden="true" class="popup fix-block popup-other">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M21 21L1 1M21 1L1 21" stroke="black" stroke-width="2" stroke-linecap="round" />
+					</svg>
+				</button>
+				<div class="popup__forms forms-popup">
+					<div class="forms-popup__image">
+						<img src="../img/payment-image.png" alt="">
+					</div>
+					<div class="forms-popup__body">
+						<div class="forms-popup__titles">
+							<div class="forms-popup__title">
+								Какую форму оплаты Вы рассматриваете?
+							</div>
+						</div>
+						<form action="#" class="forms-popup__form">
+							<div class="forms-popup__options options-forms-popup">
+								<div class="options-forms-popup__item">
+									<input hidden id="o_1" class="options-forms-popup__input" checked type="radio"
+										value="1" name="option">
+									<label for="o_1" class="options-forms-popup__label">
+										<span class="options-forms-popup__text">Наличные</span>
+									</label>
+								</div>
+								<div class="options-forms-popup__item">
+									<input hidden id="o_2" class="options-forms-popup__input" type="radio" value="2"
+										name="option">
+									<label for="o_2" class="options-forms-popup__label">
+										<span class="options-forms-popup__text">В кредит</span>
+									</label>
+								</div>
+							</div>
+							<div class="forms-popup__inputs">
+								<div class="forms-popup__input">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Имя">
+								</div>
+								<div class="forms-popup__input">
+									<input data-required autocomplete="off" type="text" name="form[]"
+										placeholder="Телефон">
+								</div>
+							</div>
+							<button type="submit" class="forms-popup__button button-blue">Отправить заявку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--цены-->
+	<div id="price-form" aria-hidden="true" class="popup fix-block popup-other">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M21 21L1 1M21 1L1 21" stroke="black" stroke-width="2" stroke-linecap="round" />
+					</svg>
+				</button>
+				<div class="popup__forms forms-popup">
+					<div class="forms-popup__image">
+						<img src="../img/price-image.png" alt="">
+					</div>
+					<div class="forms-popup__body">
+						<div class="forms-popup__titles">
+							<div class="forms-popup__title">
+								Какой диапазон цен Вас интересует?
+							</div>
+						</div>
+						<form action="#" class="forms-popup__form">
+							<div class="forms-popup__rating">
+								<div class="forms-popup__values">
+									<div class="forms-popup__value">
+										<input id="price-end-popup" placeholder="0" value="1 000 000" type="text">
+									</div>
+								</div>
+								<div class="forms-popup__range form-popup-range-sum"></div>
+							</div>
+							<div class="forms-popup__inputs">
+								<div class="forms-popup__input">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Имя">
+								</div>
+								<div class="forms-popup__input">
+									<input data-required autocomplete="off" type="text" name="form[]"
+										placeholder="Телефон">
+								</div>
+							</div>
+							<button type="submit" class="forms-popup__button button-blue">Отправить заявку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
